@@ -1,0 +1,57 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\back.JPG" />
+    <None Remove="Resources\bold.JPG" />
+    <None Remove="Resources\bullet.JPG" />
+    <None Remove="Resources\center.JPG" />
+    <None Remove="Resources\downsize.JPG" />
+    <None Remove="Resources\italic.JPG" />
+    <None Remove="Resources\justify.JPG" />
+    <None Remove="Resources\left.JPG" />
+    <None Remove="Resources\number.jpg" />
+    <None Remove="Resources\right.JPG" />
+    <None Remove="Resources\text.JPG" />
+    <None Remove="Resources\underline.JPG" />
+    <None Remove="Resources\upsize.JPG" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\back.JPG" />
+    <Resource Include="Resources\bold.JPG" />
+    <Resource Include="Resources\bullet.JPG" />
+    <Resource Include="Resources\center.JPG" />
+    <Resource Include="Resources\downsize.JPG" />
+    <Resource Include="Resources\italic.JPG" />
+    <Resource Include="Resources\justify.JPG" />
+    <Resource Include="Resources\left.JPG" />
+    <Resource Include="Resources\number.jpg" />
+    <Resource Include="Resources\right.JPG" />
+    <Resource Include="Resources\text.JPG" />
+    <Resource Include="Resources\underline.JPG" />
+    <Resource Include="Resources\upsize.JPG" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>
